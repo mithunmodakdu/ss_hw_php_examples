@@ -41,6 +41,9 @@
     // Example-07: Checking php version
     echo phpversion()  ."<br>";
 
+
+    /************** PHP Variables ************/
+
     // Example-08: php variable 
     $name = "Mithun Kumer Modak";
     echo "My name is $name" ."<br>";
@@ -80,6 +83,9 @@
     echo $a ."<br>";
     echo $b ."<br>";
     echo $c ."<br>";
+
+
+    /************** PHP Variables Scope ************/
 
     // Example-18: Variable with global scope:
     $banglaMarks = 55; // global scope
@@ -139,9 +145,28 @@
     useStaticKeyword();
     echo "<br>";
 
-    
 
 
+    /************* PHP echo and print *************/ 
+    // Example-23: The echo statement can be used with or without parentheses: echo or echo().
+    echo "Hello";
+    echo "<br>";
+    //same as:
+    echo("Hello"); 
+    echo "<br>";
+
+     // Example-24: The following example shows how to output text with the echo command (notice that the text can contain HTML markup):
+     echo "<h2>PHP is Fun!</h2>";
+     echo "Hello world!<br>";
+     echo "I'm about to learn PHP!<br>";
+     echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+
+    // Example-25: The following example shows how to output text and variables with the echo statement:
+    $txt1 = "Learn PHP";
+    $txt2 = "W3Schools.com";
+
+    echo "<h2>$txt1</h2>";
+    echo "<p>Study PHP at $txt2</p>";
     
 
    ?>
