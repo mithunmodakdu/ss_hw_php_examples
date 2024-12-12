@@ -167,6 +167,116 @@
 
     echo "<h2>$txt1</h2>";
     echo "<p>Study PHP at $txt2</p>";
+
+
+    /************* PHP Data Types *************/ 
+    // Example-26: The var_dump() function returns the data type and the value:
+    $x = 5;
+    var_dump($x);
+
+    // Example-27:PHP String
+    $x = "Hello world!";
+    $y = 'Hello world!';
+
+    var_dump($x);
+    echo "<br>";
+    var_dump($y);
+
+    // Example-28:PHP Boolean
+    $x = true;
+    var_dump($x);
+
+
+    /************* PHP Strings *************/ 
+     // Example-29: Double quoted string literals perform operations for special characters:
+      $x = "John";
+      echo "Hello $x";
+    
+    // Example-30: Single quoted strings does not perform such actions, it returns the string like it was written, with the variable name:
+      $x = "John";
+      echo 'Hello $x';
+
+    // Example-31: The PHP strlen() function returns the length of a string.
+    echo strlen("Hello world!");
+
+    // Example-32: The PHP str_word_count() function counts the number of words in a string.
+    echo str_word_count("Hello world!");
+
+    // Example-33: The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.
+    echo strpos("Hello world!", "world");
+
+
+   /************* PHP - Modify Strings *************/ 
+  // Example-34: The strtoupper() function returns the string in upper case:
+   $name = "Mithun Kumer Modak";
+   echo strtoupper($name);
+
+  // Example-35: The strtolower() function returns the string in lower case:
+    $text = "I eat rice";
+    echo strtolower($text);
+
+  // Example-36: The PHP str_replace() function replaces some characters with some other characters in a string.
+  $x = "Hello World!";
+  echo str_replace("World", "Dolly", $x);
+
+  // Example-37: The PHP strrev() function reverses a string.
+  $x = "Hello World!";
+  echo strrev($x);
+
+  // Example-38: The trim() removes any whitespace from the beginning or the end:
+  $x = "  Hello World!  ";
+  echo "<input value='" . $x ."'>";
+  echo "<br>";
+  echo "<input value='" . trim($x) . "'>";
+
+  // Example-39: The PHP explode() function splits a string into an array. The first parameter of the explode() function represents the "separator". The "separator" specifies where to split the string.
+  $x = "Mithun Kumer Modak";
+  $y = explode(" ", $x);
+  print_r($y);
+
+
+  /************* PHP - Concatenate Strings *************/ 
+  // Example-40: To concatenate, or combine, two strings you can use the . operator:
+  $firstName = "Mithun";
+  $lastName = "Modak";
+  $fullName = $firstName . $lastName;
+  echo $fullName;
+
+  // Example-41: To concatenate, or combine, two strings you can use the . operator and the " " space character to give space between them:
+  $firstName = "Mithun";
+  $lastName = "Modak";
+  $fullName = $firstName . " " . $lastName;
+  echo $fullName;
+
+  // Example-42: By surrounding the two variables in double quotes with a white space between them, the white space will also be present in the result:
+  $firstName = "Mithun";
+  $lastName = "Modak";
+  $fullName = "$firstName $lastName";
+  echo $fullName;
+
+
+
+ /************* PHP - Slicing Strings *************/ 
+  // Example-43: Slicing: We can return a range of characters by using the substr() function. Specify the start index and the number of characters you want to return.
+  $name = "Mithun Kumer Modak";
+  echo substr($name, 7, 3);
+
+  // Example-44: Slice to the End: By leaving out the length parameter, the range will go to the end:
+  $name = "Mithun Kumer Modak";
+  echo substr($name, 7);
+
+  // Example-45: Slice From the End: Use negative indexes to start the slice from the end of the string:
+  $name = "Mithun Kumer Modak";
+  echo substr($name, -5, 3);
+
+  // Example-46: Negative Length: Use negative length to specify how many characters to omit, starting from the end of the string:
+  $name = "Mithun Kumer Modak";
+  echo substr($name, 7, -3);
+
+
+
+   
+
     
 
    ?>
