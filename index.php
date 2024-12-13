@@ -274,6 +274,29 @@
   echo substr($name, 7, -3);
 
 
+/************* PHP - Escape Characters *************/ 
+// Example-47: An escape character is a backslash \ followed by the character you want to insert.
+$x = "We are the so-called \"Vikings\" from the north.";
+echo $x;
+
+// Example-48: An escape character is a backslash \ followed by the character you want to insert.
+$price = "Price is \$productprice.";
+echo $price;
+
+
+/************* PHP Numbers *************/ 
+// Example-49: is_int()
+$num1 = 5364;
+var_dump(is_int($num1));
+
+$num2 = 56.53;
+var_dump(is_int($num2));
+
+// Example-50: is_float()
+$num3 = 567.53;
+var_dump(is_float($num3));
+
+
 
    
 
